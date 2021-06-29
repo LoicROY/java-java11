@@ -41,7 +41,7 @@ public class Method_02_Test {
         // TODO l'implémentation réutilise la méthode format() de l'interface
         @Override
         public String format() {
-            return String.format("DaoA[%d persons]", findAll().size());
+            return String.format("DaoA%s", IDao.super.format());
         }
 
     }
