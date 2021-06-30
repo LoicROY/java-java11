@@ -2,6 +2,7 @@ package java8.ex05;
 
 import java8.data.Data;
 import java8.data.Person;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
@@ -15,7 +16,7 @@ public class Function_05_Test {
     //tag::functions[]
     // TODO compléter la fonction
     // TODO modifier le mot de passe en "secret"
-    Consumer<Person> changePasswordToSecret = null;
+    Consumer<Person> changePasswordToSecret = person -> person.setPassword("secret");
 
     // TODO compléter la fonction
     // TODO vérifier que l'age > 4 avec une assertion JUnit
